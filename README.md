@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -57,3 +58,29 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+=======
+# Roles & Permissions Microservice
+
+# Setup
+- composer install
+- php artisan migrate
+- php artisan serve
+
+# Authentication of users to get token
+POST /api/login
+
+# Roles to create and view
+POST /api/roles
+GET /api/roles
+
+# Permissions to create and view
+POST /api/permissions
+GET /api/permissions
+
+# Assign permission to roles and roles to users
+POST /api/roles/{role_id}/permissions
+POST /api/users/{user_id}/roles
+
+# Authorize to check is valid or not
+POST /api/authorize
+>>>>>>> 648b9233e5e62ec5f94e13e47a121dd5bd267492
